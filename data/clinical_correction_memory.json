@@ -1,0 +1,20 @@
+[
+  {
+    "iteration": 1,
+    "corrections": [
+      "REINSTATE_MEDICATION: Levothyroxine",
+      "REINSTATE_MEDICATION: Insulin lantus",
+      "ADD_DIAGNOSIS: DIABETIC KETOACIDOSIS (DKA)",
+      "ADD_DIAGNOSIS: UNCONTROLLED TYPE 2 DIABETES MELLITUS"
+    ],
+    "reward": 0.2813
+  },
+  {
+    "iteration": 2,
+    "corrections": [
+      "REINSTATE_MEDICATION: Insulin lantus",
+      "ADD_DIAGNOSIS: UNCONTROLLED TYPE 2 DIABETES MELLITUS"
+    ],
+    "reward": 0.4197
+  }
+]

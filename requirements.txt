@@ -1,0 +1,7 @@
+crewai[tools]
+pydantic
+pymupdf
+pdfplumber
+openai
+rich
+python-dotenv

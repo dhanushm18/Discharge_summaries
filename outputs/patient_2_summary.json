@@ -1,0 +1,699 @@
+{
+  "patient_demographics": {
+    "name": {
+      "value": "[REDACTED IN SOURCE / RECORD MIX-UP]",
+      "status": "CONFLICT",
+      "sources": [
+        {
+          "page_number": 24,
+          "evidence_text": "FULL NAME: [REDACTED NAME]"
+        },
+        {
+          "page_number": 32,
+          "evidence_text": "Patient Name: [REDACTED NAME]"
+        }
+      ],
+      "requires_review": true
+    },
+    "age": {
+      "value": "[REDACTED IN SOURCE]",
+      "status": "MISSING",
+      "sources": [
+        {
+          "page_number": 24,
+          "evidence_text": "AGE/GENDER [REDACTED]"
+        }
+      ],
+      "requires_review": true
+    },
+    "gender": {
+      "value": "MALE / CONFLICT",
+      "status": "CONFLICT",
+      "sources": [
+        {
+          "page_number": 37,
+          "evidence_text": "Gender: M"
+        },
+        {
+          "page_number": 24,
+          "evidence_text": "AGE/GENDER [REDACTED]"
+        }
+      ],
+      "requires_review": true
+    },
+    "mrn": {
+      "value": "[REDACTED IN SOURCE]",
+      "status": "MISSING",
+      "sources": [
+        {
+          "page_number": 3,
+          "evidence_text": "MRN: [REDACTED]"
+        }
+      ],
+      "requires_review": true
+    }
+  },
+  "admission_date": {
+    "value": "26-02-2026",
+    "status": "CONFIRMED",
+    "sources": [
+      {
+        "page_number": 16,
+        "evidence_text": "Date & Time of Nursing Initial Assessment: 26-02-202[REDACTED]"
+      },
+      {
+        "page_number": 46,
+        "evidence_text": "Chief Complaints... Fever, generalized weakness since 3 days... DOA: 26/02/2026"
+      }
+    ],
+    "requires_review": false
+  },
+  "discharge_date": {
+    "value": "02-03-2026 (Evening Discharge Requested) / CONFLICTED WITH PAGE 2 FOLLOW-UP",
+    "status": "CONFLICT",
+    "sources": [
+      {
+        "page_number": 56,
+        "evidence_text": "Advice: Discharge on request (Evening) Date: 02/03/2026"
+      },
+      {
+        "page_number": 2,
+        "evidence_text": "Review on 09.03.2026. CBC"
+      }
+    ],
+    "requires_review": true
+  },
+  "principal_diagnosis": [
+    {
+      "value": "DIABETIC KETOACIDOSIS (DKA)",
+      "status": "CONFLICT",
+      "sources": [
+        {
+          "page_number": 3,
+          "evidence_text": "Diagnosis: DKA"
+        },
+        {
+          "page_number": 54,
+          "evidence_text": "Case Reviewed: Case of AFI, DKA"
+        }
+      ],
+      "requires_review": true
+    },
+    {
+      "value": "ACUTE GASTROENTERITIS WITH DEHYDRATION",
+      "status": "CONFLICT",
+      "sources": [
+        {
+          "page_number": 1,
+          "evidence_text": "DIAGNOSIS: 1. Acute Gastroenteritis with Dehydration"
+        }
+      ],
+      "requires_review": true
+    }
+  ],
+  "secondary_diagnosis": [
+    {
+      "value": "UNCONTROLLED TYPE 2 DIABETES MELLITUS (T2DM)",
+      "status": "CONFIRMED",
+      "sources": [
+        {
+          "page_number": 46,
+          "evidence_text": "K/c/o T2DM (on Ayurvedic medication), HbA1c - 13.9%"
+        },
+        {
+          "page_number": 54,
+          "evidence_text": "Uncontrolled T2DM"
+        }
+      ],
+      "requires_review": true
+    },
+    {
+      "value": "BILATERAL PYELONEPHRITIS / BLADDER STONE",
+      "status": "CONFIRMED",
+      "sources": [
+        {
+          "page_number": 54,
+          "evidence_text": "Bladder pyelonephritis... F-C remove stone"
+        },
+        {
+          "page_number": 56,
+          "evidence_text": "B/L Pyelonephritis"
+        }
+      ],
+      "requires_review": true
+    },
+    {
+      "value": "URINARY TRACT INFECTION (UTI)",
+      "status": "CONFIRMED",
+      "sources": [
+        {
+          "page_number": 1,
+          "evidence_text": "2. Urinary Tract Infection"
+        }
+      ],
+      "requires_review": false
+    },
+    {
+      "value": "THYROID DISORDER",
+      "status": "CONFIRMED",
+      "sources": [
+        {
+          "page_number": 1,
+          "evidence_text": "K/C/O Thyroid disorder on treatment"
+        },
+        {
+          "page_number": 37,
+          "evidence_text": "Medications: Levothyroxine 75 mcg"
+        }
+      ],
+      "requires_review": false
+    }
+  ],
+  "hospital_course": {
+    "value": "Patient presented with fever, generalized weakness, and loose stools. Admitted with elevated creatinine (1.65 mg/dl) and severe hyponatremia (128 mmol/L). Managed in HDU/ICU for Diabetic Ketoacidosis (DKA) and Bilateral Pyelonephritis. Received IV fluid hydration, insulin infusion (Actrapid), and IV antibiotics. Creatinine normalized to 1.17 mg/dl. Bladder pyelonephritis/stone identified; urology consultation obtained and Foley catheterization performed. Discharged on request against medical advice.",
+    "status": "CONFIRMED",
+    "sources": [
+      {
+        "page_number": 1,
+        "evidence_text": "She was treated with IV fluids... creatinine (1.65 mg/dl) elevated... low sodium (128 mmol/L)"
+      },
+      {
+        "page_number": 2,
+        "evidence_text": "Repeat Serum Creatinine (1.17 mg/dl) normal... USG showed colitis... Discharged at request"
+      },
+      {
+        "page_number": 54,
+        "evidence_text": "Case of AFI, DKA, pyelonephritis... remove stone"
+      },
+      {
+        "page_number": 65,
+        "evidence_text": "Patient on Human Actrapid IV on flow... Foley catheterization done"
+      }
+    ],
+    "requires_review": true
+  },
+  "procedures": [
+    {
+      "value": "IV CANNULATION (Left hand 20G, Right hand 18G)",
+      "status": "CONFIRMED",
+      "sources": [
+        {
+          "page_number": 3,
+          "evidence_text": "Procedures: IV cannulation done in left hand 20G"
+        },
+        {
+          "page_number": 67,
+          "evidence_text": "IV cannula present: both hands (20G LH, 18G RH)"
+        }
+      ],
+      "requires_review": false
+    },
+    {
+      "value": "FOLEY CATHETERIZATION (16 Fr)",
+      "status": "CONFIRMED",
+      "sources": [
+        {
+          "page_number": 65,
+          "evidence_text": "2 AM: In advised Foley catheterization as per advice done"
+        },
+        {
+          "page_number": 67,
+          "evidence_text": "Patient F/C present: 16 number"
+        }
+      ],
+      "requires_review": false
+    },
+    {
+      "value": "BEDSIDE ULTRASOUND ABDOMEN & PELVIS",
+      "status": "CONFIRMED",
+      "sources": [
+        {
+          "page_number": 30,
+          "evidence_text": "USG ABDOMEN & PELVIS (BEDSIDE) - Liver (17 cm) enlarged, Bulky kidneys"
+        },
+        {
+          "page_number": 2,
+          "evidence_text": "USG abdomen and pelvis done showed Grade-I fatty liver and mildly edematous colon"
+        }
+      ],
+      "requires_review": false
+    },
+    {
+      "value": "ADULT TRANS-THORACIC ECHOCARDIOGRAM",
+      "status": "CONFIRMED",
+      "sources": [
+        {
+          "page_number": 32,
+          "evidence_text": "Adult Trans-Thoracic Echo Report"
+        },
+        {
+          "page_number": 68,
+          "evidence_text": "1:00 PM: Patient Echo scheduled"
+        }
+      ],
+      "requires_review": false
+    }
+  ],
+  "discharge_medications": [
+    {
+      "value": {
+        "name": "TAB. RACIPER",
+        "dosage": "40 MG",
+        "frequency": "1-0-0",
+        "duration": "7 DAYS (BEFORE FOOD)"
+      },
+      "status": "CONFIRMED",
+      "sources": [
+        {
+          "page_number": 2,
+          "evidence_text": "1 TAB. RACIPER 40MG 1-0-0 7 DAYS BEFORE FOOD"
+        }
+      ],
+      "requires_review": false
+    },
+    {
+      "value": {
+        "name": "TAB. EMESET",
+        "dosage": "4 MG",
+        "frequency": "1-1-1",
+        "duration": "3 DAYS"
+      },
+      "status": "CONFIRMED",
+      "sources": [
+        {
+          "page_number": 2,
+          "evidence_text": "2 TAB. EMESET 4MG 1-1-1 3 DAYS"
+        }
+      ],
+      "requires_review": false
+    },
+    {
+      "value": {
+        "name": "TAB. OFLOX TZ",
+        "dosage": "MISSING",
+        "frequency": "1-0-1",
+        "duration": "5 DAYS"
+      },
+      "status": "CONFIRMED",
+      "sources": [
+        {
+          "page_number": 2,
+          "evidence_text": "3 TAB. OFLOX TZ - 1-0-1 5 DAYS"
+        }
+      ],
+      "requires_review": true
+    },
+    {
+      "value": {
+        "name": "TAB M STRONG",
+        "dosage": "MISSING",
+        "frequency": "1-0-0",
+        "duration": "15 DAYS"
+      },
+      "status": "CONFIRMED",
+      "sources": [
+        {
+          "page_number": 2,
+          "evidence_text": "4 TAB M STRONG - 1-0-0 15 DAYS"
+        }
+      ],
+      "requires_review": true
+    },
+    {
+      "value": {
+        "name": "TAB. ZEDOTT",
+        "dosage": "MISSING",
+        "frequency": "1-1-1",
+        "duration": "3 DAYS"
+      },
+      "status": "CONFIRMED",
+      "sources": [
+        {
+          "page_number": 2,
+          "evidence_text": "5 TAB. ZEDOTT - 1-1-1 3 DAYS"
+        }
+      ],
+      "requires_review": true
+    },
+    {
+      "value": {
+        "name": "TAB. ENTRO",
+        "dosage": "MISSING",
+        "frequency": "1-0-1",
+        "duration": "3 DAYS"
+      },
+      "status": "CONFIRMED",
+      "sources": [
+        {
+          "page_number": 2,
+          "evidence_text": "6 TAB. ENTRO( - 1-0-1 3 DAYS"
+        }
+      ],
+      "requires_review": true
+    },
+    {
+      "value": {
+        "name": "TAB. MEFTAL SPAS",
+        "dosage": "1 TAB SOS",
+        "frequency": "As needed",
+        "duration": "4 TABLETS"
+      },
+      "status": "CONFIRMED",
+      "sources": [
+        {
+          "page_number": 2,
+          "evidence_text": "7 TAB. MEFTAL SPAS 1 TAB SOS 4 TABLETS"
+        }
+      ],
+      "requires_review": false
+    },
+    {
+      "value": {
+        "name": "TAB. LOPIRAMIDE",
+        "dosage": "2 MG",
+        "frequency": "1-0-1",
+        "duration": "5 DAYS"
+      },
+      "status": "CONFIRMED",
+      "sources": [
+        {
+          "page_number": 2,
+          "evidence_text": "8 TAB. LOPIRAMIDE 2MG 1-0-1 5 DAYS"
+        }
+      ],
+      "requires_review": false
+    }
+  ],
+  "medication_changes": [
+    {
+      "drug_name": "Insulin (NPH)",
+      "change_type": "REMOVED",
+      "admission_dosage": "40 units",
+      "discharge_dosage": "N/A",
+      "reason": "CRITICAL DISCREPANCY: Stopped at discharge without documented reason despite patient having DKA.",
+      "requires_review": true,
+      "sources": [
+        {
+          "page_number": 37,
+          "evidence_text": "Insulin (NPH) 40 units"
+        }
+      ]
+    },
+    {
+      "drug_name": "Insulin (Regular)",
+      "change_type": "REMOVED",
+      "admission_dosage": "50 units",
+      "discharge_dosage": "N/A",
+      "reason": "CRITICAL DISCREPANCY: Stopped at discharge without documented reason despite patient having DKA.",
+      "requires_review": true,
+      "sources": [
+        {
+          "page_number": 37,
+          "evidence_text": "Insulin (Regular) 50 units"
+        }
+      ]
+    },
+    {
+      "drug_name": "Lantus (Insulin)",
+      "change_type": "REMOVED",
+      "admission_dosage": "10 units",
+      "discharge_dosage": "N/A",
+      "reason": "CRITICAL DISCREPANCY: Stopped at discharge without documented reason despite patient having DKA.",
+      "requires_review": true,
+      "sources": [
+        {
+          "page_number": 37,
+          "evidence_text": "Lantus 10 units"
+        }
+      ]
+    },
+    {
+      "drug_name": "Levothyroxine",
+      "change_type": "REMOVED",
+      "admission_dosage": "75 mcg",
+      "discharge_dosage": "N/A",
+      "reason": "CRITICAL DISCREPANCY: Stopped at discharge without documented reason despite past history of thyroid disorder.",
+      "requires_review": true,
+      "sources": [
+        {
+          "page_number": 37,
+          "evidence_text": "Levothyroxine 75 mcg"
+        }
+      ]
+    },
+    {
+      "drug_name": "Lipitor",
+      "change_type": "REMOVED",
+      "admission_dosage": "20 mg",
+      "discharge_dosage": "N/A",
+      "reason": "CRITICAL DISCREPANCY: Stopped at discharge without documented reason.",
+      "requires_review": true,
+      "sources": [
+        {
+          "page_number": 37,
+          "evidence_text": "Lipitor 20 mg"
+        }
+      ]
+    },
+    {
+      "drug_name": "TAB. RACIPER",
+      "change_type": "ADDED",
+      "admission_dosage": "N/A",
+      "discharge_dosage": "40 MG (1-0-0)",
+      "reason": "Added for supportive gastroenteritis care / PPI.",
+      "requires_review": false,
+      "sources": [
+        {
+          "page_number": 2,
+          "evidence_text": "1 TAB. RACIPER 40MG 1-0-0"
+        }
+      ]
+    },
+    {
+      "drug_name": "TAB. OFLOX TZ",
+      "change_type": "ADDED",
+      "admission_dosage": "N/A",
+      "discharge_dosage": "MISSING (1-0-1)",
+      "reason": "Added as antibiotic for Colitis/UTI management.",
+      "requires_review": true,
+      "sources": [
+        {
+          "page_number": 2,
+          "evidence_text": "3 TAB. OFLOX TZ - 1-0-1"
+        }
+      ]
+    }
+  ],
+  "allergies": {
+    "value": "[REDACTED IN SOURCE / NOT KNOWN]",
+    "status": "MISSING",
+    "sources": [
+      {
+        "page_number": 1,
+        "evidence_text": "Known Drug Allergies: Not Known"
+      },
+      {
+        "page_number": 46,
+        "evidence_text": "Allergic History: Not Known"
+      }
+    ],
+    "requires_review": true
+  },
+  "follow_up_instructions": [
+    {
+      "value": "Urine culture and sensitivity report review.",
+      "status": "PENDING",
+      "sources": [
+        {
+          "page_number": 2,
+          "evidence_text": "Urine culture and sensitivity sent - report awaited"
+        }
+      ],
+      "requires_review": true
+    },
+    {
+      "value": "Review on 09.03.2026 for CBC check.",
+      "status": "CONFIRMED",
+      "sources": [
+        {
+          "page_number": 2,
+          "evidence_text": "Review on 09.03.2026. CBC"
+        }
+      ],
+      "requires_review": false
+    },
+    {
+      "value": "Review immediately in case of fever, loose stools, vomiting, fatigue.",
+      "status": "CONFIRMED",
+      "sources": [
+        {
+          "page_number": 2,
+          "evidence_text": "Review immediately in case of fever, loose stools, vomiting, fatigue."
+        }
+      ],
+      "requires_review": false
+    }
+  ],
+  "pending_results": [
+    {
+      "value": "Urine Culture and Sensitivity Report",
+      "status": "PENDING",
+      "sources": [
+        {
+          "page_number": 2,
+          "evidence_text": "Urine culture and sensitivity sent - report awaited"
+        },
+        {
+          "page_number": 21,
+          "evidence_text": "Urine culture and sensitivity sent- report awaited."
+        }
+      ],
+      "requires_review": true
+    },
+    {
+      "value": "Blood Culture Report",
+      "status": "PENDING",
+      "sources": [
+        {
+          "page_number": 70,
+          "evidence_text": "Bld Cls and Urn Cls sent to lab. Report due."
+        }
+      ],
+      "requires_review": true
+    }
+  ],
+  "discharge_condition": {
+    "value": "HEMODYNAMICALLY STABLE / DISCHARGED ON REQUEST AGAINST MEDICAL ADVICE",
+    "status": "CONFLICT",
+    "sources": [
+      {
+        "page_number": 2,
+        "evidence_text": "CONDITION AT DISCHARGE: Hemodynamically stable"
+      },
+      {
+        "page_number": 2,
+        "evidence_text": "Patient was advised to stay back for further management but attenders not willing, hence being discharged at request"
+      },
+      {
+        "page_number": 56,
+        "evidence_text": "Advice: Discharge on request (Evening)"
+      }
+    ],
+    "requires_review": true
+  },
+  "conflicts": [
+    {
+      "conflict_type": "DIAGNOSTIC",
+      "description": "Contradiction between Pages 1-2 (Acute Gastroenteritis & UTI) and Pages 3-70 (DKA, AFI, Pyelonephritis). Discharge note omits DKA entirely.",
+      "severity": "HIGH",
+      "pages_involved": [
+        1,
+        2,
+        3,
+        54,
+        56
+      ],
+      "evidence": [
+        {
+          "page_number": 1,
+          "evidence_text": "DIAGNOSIS: 1. Acute Gastroenteritis with Dehydration"
+        },
+        {
+          "page_number": 3,
+          "evidence_text": "Diagnosis: DKA"
+        },
+        {
+          "page_number": 56,
+          "evidence_text": "Case Reviewed... AFI, DKA... B/L Pyelonephritis"
+        }
+      ],
+      "requires_review": true
+    },
+    {
+      "conflict_type": "DEMOGRAPHIC",
+      "description": "Clinical records weight mismatch indicating folder mix-up: Page 15 has Weight: 27 kg (child) vs Page 16 (74 kg) and Page 45 (71 kg - adult).",
+      "severity": "HIGH",
+      "pages_involved": [
+        15,
+        16,
+        45
+      ],
+      "evidence": [
+        {
+          "page_number": 15,
+          "evidence_text": "Weight: 27 kg"
+        },
+        {
+          "page_number": 16,
+          "evidence_text": "Weight: 74 kg"
+        },
+        {
+          "page_number": 45,
+          "evidence_text": "Weight: 71 kg"
+        }
+      ],
+      "requires_review": true
+    },
+    {
+      "conflict_type": "MEDICATION",
+      "description": "Dangerous discontinuation of all chronic therapies: Insulin NPH/Regular, Lantus, Levothyroxine, and Lipitor stopped with no reason documented.",
+      "severity": "HIGH",
+      "pages_involved": [
+        2,
+        37
+      ],
+      "evidence": [
+        {
+          "page_number": 37,
+          "evidence_text": "Medications: Insulin (NPH), Insulin (Regular), Levothyroxine, Lipitor, Lantus"
+        },
+        {
+          "page_number": 2,
+          "evidence_text": "ADVICE ON DISCHARGE: [Only gastroenteritis meds listed; no insulins]"
+        }
+      ],
+      "requires_review": true
+    }
+  ],
+  "review_flags": [
+    {
+      "category": "CLINICAL_CONFLICT",
+      "message": "Critical diagnostic discrepancy: Gastroenteritis/UTI draft vs DKA/Pyelonephritis clinical notes. Highly suspicious folder mix-up.",
+      "suggested_action": "Re-verify full patient identity, check hospital admission charts, and rewrite discharge summary to reflect DKA/Diabetes course.",
+      "pages_involved": [
+        1,
+        3,
+        54,
+        56
+      ]
+    },
+    {
+      "category": "UNRESOLVED_MED_CHANGE",
+      "message": "Dangerous omission: Diabetes management and Insulin discontinued entirely at discharge, creating high risk of diabetic ketoacidosis recurrence.",
+      "suggested_action": "Contact endocrinologist/attending physician to reinstate proper insulin and oral glucose medication regimen.",
+      "pages_involved": [
+        2,
+        37
+      ]
+    },
+    {
+      "category": "MISSING_DATA",
+      "message": "Patient weight mismatch: 27 kg (Page 15) vs 74 kg (Page 16). Possibility of mixed chart records.",
+      "suggested_action": "Re-measure patient weight and audit folder documents to ensure no other patient notes are interleaved.",
+      "pages_involved": [
+        15,
+        16
+      ]
+    },
+    {
+      "category": "PENDING_LAB",
+      "message": "Pending blood and urine cultures sent on 27/02/2026. Reports are still due and awaited.",
+      "suggested_action": "Monitor lab portal for culture and sensitivity results, and initiate target antibiotics if cultures return positive.",
+      "pages_involved": [
+        2,
+        21,
+        70
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+[project]
+name = "discharge_summaries"
+version = "0.1.0"
+description = "discharge_summaries using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[tools]==1.5.0",
+    "openai>=2.40.0",
+    "pdfplumber>=0.11.9",
+    "pydantic>=2.13.4",
+    "pymupdf>=1.27.2.3",
+    "python-dotenv>=1.2.2",
+    "rich>=14.3.4",
+]
+
+[project.scripts]
+discharge_summaries = "discharge_summaries.main:run"
+run_crew = "discharge_summaries.main:run"
+train = "discharge_summaries.main:train"
+replay = "discharge_summaries.main:replay"
+test = "discharge_summaries.main:test"
+run_with_trigger = "discharge_summaries.main:run_with_trigger"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"

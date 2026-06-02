@@ -1,0 +1,17 @@
+[
+  {
+    "iteration": 1,
+    "reward": 0.2813,
+    "description": "Baseline (Heavy edits for DKA / Insulins / Chart mix-up)"
+  },
+  {
+    "iteration": 2,
+    "reward": 0.4197,
+    "description": "Mid-Stage (Partial guidelines learned)"
+  },
+  {
+    "iteration": 3,
+    "reward": 0.5896,
+    "description": "High-Fidelity (Full memory rules applied)"
+  }
+]

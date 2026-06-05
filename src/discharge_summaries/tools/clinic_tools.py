@@ -23,7 +23,8 @@ class GetPageContentTool(BaseTool):
     args_schema: Any = GetPageContentInput
     
     def _run(self, pages: List[int]) -> str:
-        json_path = "data/patient_2_full_ocr.json"
+        project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
+        json_path = os.path.join(project_root, "data", "patient_2_full_ocr.json")
         if not os.path.exists(json_path):
             return "Error: Transcribed patient JSON dossier is missing. Please run OCR preprocessing."
             
@@ -49,7 +50,8 @@ class SearchFullDossierTool(BaseTool):
     args_schema: Any = SearchFullDossierInput
     
     def _run(self, query: str) -> str:
-        json_path = "data/patient_2_full_ocr.json"
+        project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
+        json_path = os.path.join(project_root, "data", "patient_2_full_ocr.json")
         if not os.path.exists(json_path):
             return "Error: Transcribed patient JSON dossier is missing."
             

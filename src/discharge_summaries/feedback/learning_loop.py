@@ -96,7 +96,8 @@ class EditLearningLoop:
     """Feedback loop that derives accuracy signals and builds Correction Memory for agents."""
     
     def __init__(self):
-        self.memory_path = "data/clinical_correction_memory.json"
+        project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
+        self.memory_path = os.path.join(project_root, "data", "clinical_correction_memory.json")
         self.reviewer = SimulatedReviewer()
         self.memory: List[Dict[str, Any]] = []
         self.load_memory()
@@ -265,9 +266,11 @@ def simulate_feedback_training():
         {"iteration": 2, "reward": reward_2, "description": "Mid-Stage (Partial guidelines learned)"},
         {"iteration": 3, "reward": reward_3, "description": "High-Fidelity (Full memory rules applied)"}
     ]
-    with open("outputs/learning_curve.json", "w", encoding="utf-8") as f:
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
+    curve_output_path = os.path.join(project_root, "outputs", "learning_curve.json")
+    with open(curve_output_path, "w", encoding="utf-8") as f:
         json.dump(curve, f, indent=2)
-    print("Learning curve data written to outputs/learning_curve.json")
+    print(f"Learning curve data written to {curve_output_path}")
     print("=== FEEDBACK TRAINING COMPLETED SUCCESSFULLY ===")
 
 if __name__ == "__main__":

@@ -15,11 +15,13 @@ class ClinicalCoordinator:
     """Dynamic Clinical Agent Orchestrator with planning, execution, and replanning loop."""
     
     def __init__(self, pdf_path: str = "patient 2 (1).pdf"):
-        self.pdf_path = pdf_path
-        self.ocr_json_path = "data/patient_2_full_ocr.json"
-        self.trace_path = "traces/patient_2_trace.txt"
-        self.output_json_path = "outputs/patient_2_summary.json"
-        self.output_md_path = "outputs/patient_2_summary.md"
+        # Resolve project root dynamically
+        self.project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+        self.pdf_path = os.path.join(self.project_root, pdf_path)
+        self.ocr_json_path = os.path.join(self.project_root, "data", "patient_2_full_ocr.json")
+        self.trace_path = os.path.join(self.project_root, "traces", "patient_2_trace.txt")
+        self.output_json_path = os.path.join(self.project_root, "outputs", "patient_2_summary.json")
+        self.output_md_path = os.path.join(self.project_root, "outputs", "patient_2_summary.md")
         
         # Initialize specialized agents
         self.agent_factory = ClinicalAgents()
